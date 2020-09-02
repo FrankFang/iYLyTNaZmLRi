@@ -11,7 +11,7 @@ a {
   text-decoration: none;
   color: inherit;
   &:hover {
-    border-bottom: 1px solid;
+    text-decoration: underline;
     cursor: pointer;
   }
 }
@@ -22,6 +22,11 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+}
+
+svg {
+  width: 1em;
+  height: 1em;
 }
 
 body {

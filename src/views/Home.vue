@@ -4,7 +4,7 @@
     <Topnav />
     <div class="banner">
       <h1>轱辘UI</h1>
-      <h2>一个厉害的 UI 框架</h2>
+      <h2>一个面向学习者的 UI 框架</h2>
       <p class="actions">
         <a href="https://github.com">GitHub</a>
         <router-link to="/doc">开始</router-link>
@@ -31,8 +31,8 @@
         <svg>
           <use xlink:href="#icon-light"></use>
         </svg>
-        <h3>轻量级的 UI 库</h3>
-        <p>每个 UI 组件的源代码都极其简洁</p>
+        <h3>代码易读</h3>
+        <p>每个组件的源代码都极其简洁</p>
       </li>
     </ul>
   </div>
@@ -50,11 +50,17 @@ export default {
 
 <style lang="scss" scoped>
 $border-radius: 4px;
+$green: #02bcb0;
+$linear-gradient:linear-gradient(145deg, #e3fffd 0%, #b7e9e6 100%);
+
+a {
+  text-decoration: none;
+}
 
 .topnavAndBanner {
   background: rgb(227, 255, 253);
-  background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
-  clip-path: ellipse(100% 60% at 50% 40%);
+  background: $linear-gradient;
+  clip-path: ellipse(80% 60% at 50% 40%);
 }
 
 .banner {
@@ -63,7 +69,7 @@ $border-radius: 4px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #1bcac1;
+  color: $green;
 
   h1,
   h2 {
@@ -75,7 +81,8 @@ $border-radius: 4px;
 
     a {
       margin: 0 8px;
-      background: #02bcb0;
+      background: $green;
+
       color: white;
       display: inline-block;
       border-radius: $border-radius;

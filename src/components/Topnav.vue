@@ -1,9 +1,11 @@
 <template>
 <div class="topnav">
-  <div class="logo">LOGO</div>
+  <svg class="logo">
+    <use xlink:href="#icon-wheel"></use>
+  </svg>
   <ul class="menu">
-    <li>菜单1</li>
-    <li>菜单2</li>
+    <li>文档</li>
+    <li>关于</li>
   </ul>
   <span class="toggleAside" @click="toggleMenu"></span>
 </div>
@@ -40,8 +42,9 @@ export default {
   align-items: center;
 
   >.logo {
-    max-width: 6em;
     margin-right: auto;
+    width: 32px;
+    height: 32px;
   }
 
   >.menu {
