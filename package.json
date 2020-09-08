@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "marked": "^1.1.1",
     "rollup-plugin-markdown": "^0.1.0",
     "sass": "1.26.10",
     "vite": "^1.0.0-rc.1"

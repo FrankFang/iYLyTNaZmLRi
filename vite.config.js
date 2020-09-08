@@ -1,4 +1,5 @@
+import { md } from "./plugins/md";
+
 export default {
-  vueCustomBlockTransforms: {
-  },
+  plugins: [md()]
 };
